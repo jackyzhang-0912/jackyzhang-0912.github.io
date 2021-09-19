@@ -1,0 +1,41 @@
+body{
+    font-size: 16px;
+}
+.page-header{
+    background-color: #159957;
+    background-image: linear-gradient(
+        120deg, #255e97, #28c275);
+    text-align: center;
+    color: rgb(19, 17, 17);
+}
+
+.page-intro {
+    font-size: 3.25rem;
+}
+
+@media screen and (min-width: 64em) {
+    .page-header{
+        padding: 5rem 6rem;
+    }
+    .page-intro{
+        font-size: 3.25rem;
+    }
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+    .page-header{
+        padding: 3rem 4rem;
+    }
+    .page-intro{
+        font-size: 2.25rem;
+    }
+}
+
+@media screen and (max-width: 42em) {
+    .page-header{
+        padding: 2rem 1rem;
+    }
+    .page-intro{
+        font-size: 1.75rem;
+    }
+}
