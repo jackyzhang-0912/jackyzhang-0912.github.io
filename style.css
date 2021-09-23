@@ -1,8 +1,19 @@
-body{
+body {
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
 }
-.page-header{
+.nav {
+    display: flex;
+    height: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(219 219 219);
+    padding: 0.5rem;
+}
+.nav span {
+    color: black;
+}
+.page-header {
     background-color: #159957;
     background-image: linear-gradient(
         120deg, #255e97, #28c275);
@@ -45,7 +56,7 @@ h1 span:nth-child(11) { animation-delay: 1s; }
 
 @media screen and (min-width: 64em) {
     .page-header{
-        padding: 4rem 5rem;
+        padding: 3rem 5rem 5rem 5rem;
     }
     .page-intro{
         font-size: 3.5rem;
@@ -76,10 +87,10 @@ h1 span:nth-child(11) { animation-delay: 1s; }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
     .page-header{
-        padding: 3rem 4rem;
+        padding: 2rem 4rem 3rem 4rem;
     }
     .page-intro{
-        font-size: 2.5rem;
+        font-size: 2.75rem;
     }
     h1 {
         height: 5rem;
@@ -110,7 +121,7 @@ h1 span:nth-child(11) { animation-delay: 1s; }
         padding: 1rem 2rem;
     }
     .page-intro{
-        font-size: 1.75rem;
+        font-size: 2rem;
     }
     h1 {
         height: 4rem;
