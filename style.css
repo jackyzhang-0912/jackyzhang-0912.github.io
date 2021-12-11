@@ -85,7 +85,7 @@ h1 span:nth-child(11) { animation-delay: 1s; }
     }
 }
 
-@media screen and (min-width: 42em) and (max-width: 64em) {
+@media only screen and (min-width: 42em) and (max-width: 64em) {
     .page-header{
         padding: 2rem 4rem 3rem 4rem;
     }
@@ -116,7 +116,7 @@ h1 span:nth-child(11) { animation-delay: 1s; }
         }
 }
 
-@media screen and (max-width: 42em) {
+@media only screen and (max-width: 833px) {
     .page-header{
         padding: 1rem 2rem;
     }
@@ -128,7 +128,7 @@ h1 span:nth-child(11) { animation-delay: 1s; }
     }
     h1 span {
         top: 15px;
-        font-size: 3rem;
+        font-size: 2。5rem;
     }
     @keyframes bounce {
         100% {
