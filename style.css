@@ -28,7 +28,8 @@ body {
     flex-wrap: wrap;
     padding: 1vh 2vh;
     align-items: center;
-    background-color: #eaead3;
+    /* adding background color makes after invalid */
+    /* background-color: #eaead3; */
 }
 .name {
     font-size: 2.5em; 
@@ -61,7 +62,7 @@ body {
     transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
     background-color: rgb(185, 151, 91);
 }
-.school:hover::after {
+.school:hover:after {
     top: 0%
 }
 .starwars {
