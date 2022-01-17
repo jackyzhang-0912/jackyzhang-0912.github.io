@@ -45,6 +45,11 @@ body {
     margin-top: 20px
 }
 
+.name:hover {
+    transition: .1s;
+    text-shadow: 0 0 10px #0ebeff, 0 0 20px #0ebeff, 0 0 50px #0ebeff, 0 0 100px #0ebeff, 0 0 200px #0ebeff;
+}
+
 .main-intro {
     font-size: 1.7em;
     font-weight: 400;
@@ -97,7 +102,7 @@ body {
     bottom: 25px;
     margin: 0 auto;
     /* background-color: white; */
-    background-image: url("images/hyperspace.jpg");
+    background-image: url("images/timelineBackground.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -206,7 +211,7 @@ body {
         bottom: 25px;
         margin: 0 auto;
         /* background-color: white; */
-        background-image: url("images/hyperspace.jpg");
+        background-image: url("images/timelineBackground.jpg");
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -266,10 +271,24 @@ body {
 }
 
 
-.travel {
-    margin-top: 50px;
-    background-color: blue;
+.contact {
+    padding: 8px;
+    margin-top: 65px;
+    height: 100vh;
+    background-image: url("images/contactBackground.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
 }
+
+.contact_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 55px;
+    text-shadow: 0 0 6px #c55050;
+    color: #0512fead;
+}
+
 
 h1 span {
     position: relative;
@@ -440,6 +459,7 @@ h1 span:nth-child(11) {
         font-weight: 500;
         margin-bottom: 10px;
         margin-top: 18px;
+        text-shadow: 0 0 10px #0ebeff, 0 0 20px #0ebeff, 0 0 50px #0ebeff, 0 0 100px #0ebeff, 0 0 200px #0ebeff;
     }
 
     .main-intro {
@@ -454,5 +474,22 @@ h1 span:nth-child(11) {
         margin-bottom: -8px;
         width: 58px;
         height: 28px;
+    }
+
+    .contact {
+        margin-top: 65px;
+        height: 100vh;
+        background-image: url("images/contactBackgroundSmall.jpeg");
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .contact_header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 35px;
+        text-shadow: 0 0 6px #c55050;
+        color: #0512fead;
     }
 }
