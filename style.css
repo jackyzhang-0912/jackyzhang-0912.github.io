@@ -1,11 +1,13 @@
 * {
     box-sizing: border-box;
-  }
+}
+
 body {
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     background-color: #cbe6e4;
 }
+
 .nav {
     display: flex;
     height: 2rem;
@@ -14,33 +16,35 @@ body {
     background: rgb(219 219 219);
     padding: 0.5rem;
 }
+
 .nav span {
     color: black;
 }
+
 .page-header {
     background-color: #159957;
-    background-image: linear-gradient(
-        120deg, #255e97, #28c275);
+    background-image: linear-gradient(120deg, #255e97, #28c275);
     display: flex;
     justify-content: center;
     align-items: center;
     color: rgb(19, 17, 17);
 }
+
 .about {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 1vh 2vh;
     align-items: center;
-    /* adding background color makes after invalid */
-    /* background-color: #eaead3; */
 }
+
 .name {
-    font-size: 2.5em; 
-    font-weight: 500; 
+    font-size: 2.5em;
+    font-weight: 500;
     margin-bottom: 10px;
     margin-top: 20px
 }
+
 .main-intro {
     font-size: 1.7em;
     font-weight: 400;
@@ -49,11 +53,13 @@ body {
     width: 90%;
     font-family: "Gill Sans", sans-serif;
 }
+
 .school {
     text-decoration: none;
     color: #121314;
     position: relative;
 }
+
 .school:after {
     content: '';
     position: absolute;
@@ -65,17 +71,21 @@ body {
     transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
     background-color: rgb(185, 151, 91);
 }
+
 .school:hover:after {
     top: 0%
 }
+
 .starwars {
     margin-bottom: -13px;
     width: 85px;
     height: 45px;
 }
+
 .zhihu {
     color: blue;
 }
+
 .zhihu:hover {
     text-decoration: none;
 }
@@ -90,15 +100,15 @@ body {
     background-image: url("images/hyperspace.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-  }
+}
 
-  /* color for the content */
-  .timeline p {
-      color: #eef225c7;
-      font-size: 20px;
-  }
-  
-  .timeline::after {
+/* color for the content */
+.timeline p {
+    color: #eef225c7;
+    font-size: 20px;
+}
+
+.timeline::after {
     content: '';
     position: absolute;
     width: 6px;
@@ -107,22 +117,22 @@ body {
     bottom: 0;
     left: 50%;
     margin-left: -3px;
-  }
+}
 
-  .timeline a:hover {
-      text-decoration: none;
-  }
-  
-  /* Container around content */
-  .container {
+.timeline a:hover {
+    text-decoration: none;
+}
+
+/* Container around content */
+.container {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
-  }
-  
-  /* The circles on the timeline */
-  .container::after {
+}
+
+/* The circles on the timeline */
+.container::after {
     content: '';
     position: absolute;
     width: 25px;
@@ -133,20 +143,20 @@ body {
     top: 15px;
     border-radius: 50%;
     z-index: 1;
-  }
-  
-  /* Place the container to the left */
-  .left {
+}
+
+/* Place the container to the left */
+.left {
     left: 0;
-  }
-  
-  /* Place the container to the right */
-  .right {
+}
+
+/* Place the container to the right */
+.right {
     left: 50%;
-  }
-  
-  /* Add arrows to the left container (pointing right) */
-  .left::before {
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -157,10 +167,10 @@ body {
     border: medium solid white;
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent rgb(88 125 118);
-  }
-  
-  /* Add arrows to the right container (pointing left) */
-  .right::before {
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -171,21 +181,21 @@ body {
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent rgb(88 125 118) transparent transparent;
-  }
-  
-  /* Fix the circle for containers on the right side */
-  .right::after {
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
     left: -16px;
-  }
-  
-  /* The actual content */
-  .content {
+}
+
+/* The actual content */
+.content {
     padding: 10px 15px;
     background-color: rgb(88 125 118);
     position: relative;
     border-radius: 6px;
     color: white;
-  }
+}
 
 /* Media queries for timeline */
 @media screen and (max-width: 650px) {
@@ -199,11 +209,11 @@ body {
         background-image: url("images/hyperspace.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-      }
+    }
 
     /* Place the timelime to the left */
     .timeline::after {
-    left: 31px;
+        left: 31px;
     }
 
     .timeline h2 {
@@ -214,46 +224,46 @@ body {
         color: #eef225c7;
         font-size: 17px;
     }
-    
+
     /* Full-width containers */
     .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
     }
-    
+
     /* Make sure that all arrows are pointing leftwards */
     .container::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent rgb(88 125 118) transparent transparent;
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent rgb(88 125 118) transparent transparent;
     }
 
     /* The circles on the timeline */
-  .container::after {
-    content: '';
-    position: absolute;
-    width: 23px;
-    height: 23px;
-    right: -17px;
-    background-color: black;
-    border: 4px solid #e7e7e2;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-  }
-  
+    .container::after {
+        content: '';
+        position: absolute;
+        width: 23px;
+        height: 23px;
+        right: -17px;
+        background-color: black;
+        border: 4px solid #e7e7e2;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
     /* Make sure all circles are at the same spot */
     .left::after, .right::after {
-    left: 16px;
+        left: 16px;
     }
-    
+
     /* Make all right containers behave like the left ones */
     .right {
-    left: 0%;
+        left: 0%;
     }
-  }
+}
 
 
 .travel {
@@ -268,127 +278,170 @@ h1 span {
     font-family: 'Titan One', cursive;
     color: #FFF;
     text-shadow: 0 1px 0 #CCC,
-                    0 2px 0 #CCC,
-                    0 3px 0 #CCC,
-                    0 4px 0 #CCC,
-                    0 5px 0 #CCC,
-                    0 6px 0 transparent,
-                    0 7px 0 transparent,
-                    0 8px 0 transparent,
-                    0 9px 0 transparent,
-                    0 10px 10px rgba(0, 0, 0, .4);
+        0 2px 0 #CCC,
+        0 3px 0 #CCC,
+        0 4px 0 #CCC,
+        0 5px 0 #CCC,
+        0 6px 0 transparent,
+        0 7px 0 transparent,
+        0 8px 0 transparent,
+        0 9px 0 transparent,
+        0 10px 10px rgba(0, 0, 0, .4);
 }
 
-h1 span:nth-child(2) { animation-delay: .1s; }
-h1 span:nth-child(3) { animation-delay: .2s; }
-h1 span:nth-child(4) { animation-delay: .3s; }
-h1 span:nth-child(5) { animation-delay: .4s; }
-h1 span:nth-child(6) { animation-delay: .5s; }
-h1 span:nth-child(7) { animation-delay: .6s; }
-h1 span:nth-child(8) { animation-delay: .7s; }
-h1 span:nth-child(9) { animation-delay: .8s; }
-h1 span:nth-child(10) { animation-delay: .9s; }
-h1 span:nth-child(11) { animation-delay: 1s; }
+h1 span:nth-child(2) {
+    animation-delay: .1s;
+}
+
+h1 span:nth-child(3) {
+    animation-delay: .2s;
+}
+
+h1 span:nth-child(4) {
+    animation-delay: .3s;
+}
+
+h1 span:nth-child(5) {
+    animation-delay: .4s;
+}
+
+h1 span:nth-child(6) {
+    animation-delay: .5s;
+}
+
+h1 span:nth-child(7) {
+    animation-delay: .6s;
+}
+
+h1 span:nth-child(8) {
+    animation-delay: .7s;
+}
+
+h1 span:nth-child(9) {
+    animation-delay: .8s;
+}
+
+h1 span:nth-child(10) {
+    animation-delay: .9s;
+}
+
+h1 span:nth-child(11) {
+    animation-delay: 1s;
+}
 
 
 
 @media screen and (min-width: 64em) {
-    .page-header{
+    .page-header {
         padding: 3rem 5rem 5rem 5rem;
     }
-    .page-intro{
+
+    .page-intro {
         font-size: 3.5rem;
     }
+
     h1 {
         height: 6rem;
     }
+
     h1 span {
         top: 25px;
         font-size: 5rem;
     }
+
     @keyframes bounce {
         100% {
             top: -25px;
             text-shadow: 0 1px 0 #CCC,
-                        0 2px 0 #CCC,
-                        0 3px 0 #CCC,
-                        0 4px 0 #CCC,
-                        0 5px 0 #CCC,
-                        0 6px 0 #CCC,
-                        0 7px 0 #CCC,
-                        0 8px 0 #CCC,
-                        0 9px 0 #CCC,
-                        0 50px 25px rgba(0, 0, 0, .2);
+                0 2px 0 #CCC,
+                0 3px 0 #CCC,
+                0 4px 0 #CCC,
+                0 5px 0 #CCC,
+                0 6px 0 #CCC,
+                0 7px 0 #CCC,
+                0 8px 0 #CCC,
+                0 9px 0 #CCC,
+                0 50px 25px rgba(0, 0, 0, .2);
         }
     }
 }
 
 @media only screen and (min-width: 42em) and (max-width: 64em) {
-    .page-header{
+    .page-header {
         padding: 2rem 4rem 3rem 4rem;
     }
-    .page-intro{
+
+    .page-intro {
         font-size: 2.75rem;
     }
+
     h1 {
         height: 5rem;
     }
+
     h1 span {
         top: 20px;
         font-size: 4rem;
     }
+
     @keyframes bounce {
         100% {
             top: -20px;
             text-shadow: 0 1px 0 #CCC,
-                        0 2px 0 #CCC,
-                        0 3px 0 #CCC,
-                        0 4px 0 #CCC,
-                        0 5px 0 #CCC,
-                        0 6px 0 #CCC,
-                        0 7px 0 #CCC,
-                        0 8px 0 #CCC,
-                        0 9px 0 #CCC,
-                        0 50px 25px rgba(0, 0, 0, .2);
+                0 2px 0 #CCC,
+                0 3px 0 #CCC,
+                0 4px 0 #CCC,
+                0 5px 0 #CCC,
+                0 6px 0 #CCC,
+                0 7px 0 #CCC,
+                0 8px 0 #CCC,
+                0 9px 0 #CCC,
+                0 50px 25px rgba(0, 0, 0, .2);
         }
-        }
+    }
 }
 
 @media only screen and (max-width: 833px) {
-    .page-header{
+    .page-header {
         padding: 1rem 2rem;
     }
-    .page-intro{
+
+    .page-intro {
         font-size: 2rem;
     }
+
     h1 {
         height: 4rem;
     }
+
     h1 span {
         top: 15px;
         font-size: 2.1rem;
     }
+
     @keyframes bounce {
         100% {
             top: -15px;
             text-shadow: 0 1px 0 #CCC,
-                        0 2px 0 #CCC,
-                        0 3px 0 #CCC,
-                        0 4px 0 #CCC,
-                        0 5px 0 #CCC,
-                        0 6px 0 #CCC,
-                        0 7px 0 #CCC,
-                        0 8px 0 #CCC,
-                        0 9px 0 #CCC,
-                        0 50px 25px rgba(0, 0, 0, .2);
+                0 2px 0 #CCC,
+                0 3px 0 #CCC,
+                0 4px 0 #CCC,
+                0 5px 0 #CCC,
+                0 6px 0 #CCC,
+                0 7px 0 #CCC,
+                0 8px 0 #CCC,
+                0 9px 0 #CCC,
+                0 50px 25px rgba(0, 0, 0, .2);
         }
     }
+
     .name {
         font-size: 1.5em;
         font-weight: 500;
         margin-bottom: 10px;
         margin-top: 18px;
     }
+
     .main-intro {
         font-size: 1.1em;
         font-weight: 400;
@@ -396,6 +449,7 @@ h1 span:nth-child(11) { animation-delay: 1s; }
         margin: 5px 10px;
         font-family: "Gill Sans", sans-serif;
     }
+
     .starwars {
         margin-bottom: -8px;
         width: 58px;
