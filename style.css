@@ -9,12 +9,17 @@ body {
 }
 
 .nav {
+    padding: 6px 20px 6px 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    background: #bad2ea;
     display: flex;
-    height: 2rem;
-    justify-content: space-around;
     align-items: center;
-    background: rgb(219 219 219);
-    padding: 0.5rem;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
 }
 
 .nav span {
