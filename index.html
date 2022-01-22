@@ -6,15 +6,17 @@
     <title>The Name's Jacky</title>
     <link rel="icon" href="images/favicon.ico">
     <link href="style.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
     <nav class="nav">
-        <span>About Me</span>
-        <span>Timeline</span>
-        <span>Contact</span>
+        <span onclick="changeSection('home')">Home</span>
+        <span onclick="changeSection('about')">About Me</span>
+        <span onclick="changeSection('timeline')">Timeline</span>
+        <span onclick="changeSection('contact')"> Contact</span>
     </nav>
-    <div class="page-header">
+    <div class="page-header" id="home">
         <h1 class="page-intro">
             <span>H</span>
             <span>i</span>
@@ -29,7 +31,7 @@
             <span>!</span>
         </h1>
     </div>
-    <div class="about">
+    <div class="about" id="about">
         <p class="name">My name is Jacky Zhang.</p>
         <p class="main-intro">I am a junior at <span style="background-color: #4caf50;">College</span> of
             <a href="https://www.wm.edu" target="_blank" class="school">William and Mary.</a> Currently,
@@ -45,7 +47,7 @@
             <i>Earth, Wind & Fire</i>.
         </p>
     </div>
-    <div class="timeline">
+    <div class="timeline" id="timeline">
         <div class="container left">
             <div class="content">
                 <h2>1999 -- Hangzhou, China</h2>
@@ -86,7 +88,7 @@
             </div>
         </div>
     </div>
-    <div class="contact">
+    <div class="contact" id="contact">
         <p class="contact_header">Contact Me</p>
         <div class="email_box">sfsfs</div>
     </div>
