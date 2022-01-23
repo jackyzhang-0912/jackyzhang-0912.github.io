@@ -16,6 +16,7 @@
         <span onclick="changeSection('timeline')">Timeline</span>
         <span onclick="changeSection('contact')"> Contact</span>
     </nav>
+    <!-- welcome animation section -->
     <div class="page-header" id="home">
         <h1 class="page-intro">
             <span>H</span>
@@ -31,6 +32,7 @@
             <span>!</span>
         </h1>
     </div>
+    <!-- about section -->
     <div class="about" id="about">
         <p class="name">My name is Jacky Zhang.</p>
         <p class="main-intro">I am a junior at <span style="background-color: #4caf50;">College</span> of
@@ -47,6 +49,7 @@
             <i>Earth, Wind & Fire</i>.
         </p>
     </div>
+    <!-- timeline section -->
     <div class="timeline" id="timeline">
         <div class="container left">
             <div class="content">
@@ -88,9 +91,15 @@
             </div>
         </div>
     </div>
+    <!-- contact section -->
     <div class="contact" id="contact">
         <p class="contact_header">Contact Me</p>
-        <div class="email_box">sfsfs</div>
+        <button 
+            onclick="sendMail()"
+            class="email_box"
+        >
+            jackyzhang0912@gmail.com
+        </button>
     </div>
 </body>
 
