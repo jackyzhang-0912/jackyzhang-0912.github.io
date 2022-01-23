@@ -6,6 +6,6 @@ function changeSection(sectionId) {
 
 // send email method
 function sendMail() {
-    const emailStr = 'mailto:jackyzhang0912@gmail.com?subject=Just a title&body=Open to anything!';
+    const emailStr = 'mailto:jackyzhang0912@gmail.com?subject=You name it&body=Open to anything~';
     window.location.href = emailStr;
 }
