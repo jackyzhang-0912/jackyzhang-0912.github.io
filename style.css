@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather:wght@300&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -212,6 +214,23 @@ body {
     color: white;
 }
 
+.quote-section {
+    margin-top: 90px;
+    padding: 13px;
+    text-align: center;
+    background-color: lightblue;
+}
+
+.quote {
+    font-size: 28px;
+    font-family: 'Dancing Script', cursive;
+}   
+
+.quote-author {
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+}
+
 /* Media queries for timeline */
 @media screen and (max-width: 650px) {
     .timeline {
@@ -239,6 +258,15 @@ body {
         color: #eef225c7;
         font-size: 17px;
     }
+
+    .quote {
+        font-size: 23px;
+    }
+
+    .quote-author {
+        font-size: 16px;
+    }
+
 
     /* Full-width containers */
     .container {
